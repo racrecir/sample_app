@@ -3,13 +3,13 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.11'
 
-group :development do
+group :development, :test do
   gem 'rspec-rails'
-end
-
-group :test do
-  gem 'rspec'
   gem 'webrat'
+gem 'spork'
+gem 'spork-rails'
+gem 'default_value_for'
+
 end
 
 # Use SCSS for stylesheets
